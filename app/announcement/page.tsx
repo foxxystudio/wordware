@@ -86,7 +86,7 @@ export default function Announcement() {
 
           {/* Main Investors */}
           <section className="mb-[64px] md:mb-56">
-            <div className="max-w-6xl">
+            <div className="max-w-[100%]">
               <div className="inner-header w-full flex items-center justify-center gap-8 max-[990px]:gap-5 max-md:flex-col">
                 <div className="single-invest-wrapper w-full max-w-[464px] flex items-center justify-center rounded-[20px] bg-[#F5F5F0] px-12 py-8 max-[990px]:px-10 max-[990px]:py-7 max-md:px-6 max-md:py-4 max-md:h-[100px]">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-full max-md:h-[40px]" width="185" height="50" viewBox="0 0 185 50" fill="none">
@@ -147,7 +147,7 @@ export default function Announcement() {
             <h2 className="text-lg lg:text-xl font-normal text-black mb-[32px] md:mb-16 cascade-in" style={{ animationDelay: '0.9s' }}>
               With participation from
             </h2>
-            <div className="max-w-6xl">
+            <div className="max-w-[100%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-4 text-base lg:text-lg leading-relaxed text-black font-normal cascade-in" style={{ animationDelay: '1.0s' }}>
                 <div>Day One Ventures</div>
                 <div>20SALES</div>
@@ -166,7 +166,7 @@ export default function Announcement() {
             <h2 className="text-lg lg:text-xl font-normal text-black mb-[32px] md:mb-16 cascade-in" style={{ animationDelay: '1.1s' }}>
               Angel Investors
             </h2>
-            <div className="max-w-6xl">
+            <div className="max-w-[100%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-4 text-base lg:text-lg leading-relaxed text-black font-normal cascade-in" style={{ animationDelay: '1.2s' }}>
                 <div>Paul Graham</div>
                 <div>Vlad Magdalin</div>

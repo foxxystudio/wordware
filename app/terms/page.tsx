@@ -75,7 +75,7 @@ export default function Terms() {
 
         <div className="px-[16px] md:px-[40px] lg:px-[96px] xl:px-[172px] 2xl:px-[258px] pt-[172px] md:pt-[252px] pb-[96px] md:pb-32">
           {/* Two Column Layout */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-24">
+          <div className="flex flex-col md:flex-row max-w-5xl mx-auto gap-6 md:gap-24">
             {/* Left Column - Title */}
             <div className="md:w-[35%] md:sticky md:top-32 md:self-start">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal leading-tight text-black font-suisse mb-8 md:mb-6 cascade-in" style={{ animationDelay: '0.4s' }}>

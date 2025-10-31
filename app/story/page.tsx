@@ -76,7 +76,7 @@ export default function Story() {
         <div className="px-[16px] md:px-[40px] lg:px-[96px] xl:px-[172px] 2xl:px-[258px] pt-[172px] md:pt-[252px] pb-[96px] md:pb-32">
 
           {/* Title */}
-          <section className="mb-[64px] md:mb-48">
+          <section className="max-w-5xl mx-auto mb-[64px] md:mb-48">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal leading-tight text-black font-suisse mb-[32px] md:mb-16 cascade-in" style={{ animationDelay: '0.4s' }}>
               About Wordware - Full Story
             </h1>
@@ -86,14 +86,14 @@ export default function Story() {
           {/* Content Sections */}
           <div className="space-y-24 sm:space-y-32 md:space-y-40">
             {/* The Origin */}
-            <section>
+            <section className='max-w-5xl mx-auto'>
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0">
                   <h2 className="text-lg lg:text-xl font-normal text-black cascade-in" style={{ animationDelay: '0.6s' }}>
                     The Origin
                   </h2>
                 </div>
-                <div className="flex-1 max-w-3xl space-y-12">
+                <div className="flex-1 max-w-[100%] space-y-12">
                   <p className="text-base lg:text-lg leading-relaxed text-black font-normal cascade-in" style={{ animationDelay: '0.7s' }}>
                     Robert and I met nearly ten years ago studying deep learning at the University of Cambridge. This was 2012—before anyone called it "deep learning," before Transformers, before the current AI wave. We were reading papers about neural networks that most people thought were academic curiosities.
                   </p>
@@ -111,7 +111,7 @@ export default function Story() {
             </section>
 
             {/* Act One */}
-            <section>
+            <section className='max-w-5xl mx-auto'>
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0">
                   <h2 className="text-lg lg:text-xl font-normal text-black cascade-in" style={{ animationDelay: '1.1s' }}>
@@ -139,7 +139,7 @@ export default function Story() {
             </section>
 
             {/* The Pivot */}
-            <section>
+            <section className='max-w-5xl mx-auto'>
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0">
                   <h2 className="text-lg lg:text-xl font-normal text-black cascade-in" style={{ animationDelay: '1.7s' }}>
@@ -173,7 +173,7 @@ export default function Story() {
             </section>
 
             {/* What We're Building */}
-            <section>
+            <section className='max-w-5xl mx-auto'>
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0">
                   <h2 className="text-lg lg:text-xl font-normal text-black cascade-in" style={{ animationDelay: '2.5s' }}>
@@ -265,7 +265,7 @@ export default function Story() {
             </section>
 
             {/* Our Beliefs */}
-            <section>
+            <section className='max-w-5xl mx-auto'>
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0">
                   <h2 className="text-lg lg:text-xl font-normal text-black cascade-in" style={{ animationDelay: '4.9s' }}>
@@ -380,7 +380,7 @@ export default function Story() {
             </section>
 
             {/* Where We Are Today */}
-            <section>
+            <section className='max-w-5xl mx-auto'>
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0">
                   <h2 className="text-lg lg:text-xl font-normal text-black cascade-in" style={{ animationDelay: '8.2s' }}>
@@ -414,7 +414,7 @@ export default function Story() {
             </section>
 
             {/* What Comes Next */}
-            <section>
+            <section className='max-w-5xl mx-auto'>
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0">
                   <h2 className="text-lg lg:text-xl font-normal text-black cascade-in" style={{ animationDelay: '9.0s' }}>
@@ -452,7 +452,7 @@ export default function Story() {
             </section>
 
             {/* Signature */}
-            <section className="pb-0">
+            <section className="pb-0 max-w-5xl mx-auto">
               <div className="flex flex-col md:flex-row gap-6 md:gap-16">
                 <div className="md:w-72 md:flex-shrink-0"></div>
                 <div className="flex-1 max-w-3xl">
