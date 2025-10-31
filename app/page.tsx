@@ -137,32 +137,32 @@ export default function LandingPage4() {
             {/* Testimonials */}
             <div className="testimonials w-full px-10 py-[259px] relative max-md:px-4 max-md:py-24">
                <div className="inner__wrapper w-full flex flex-col items-center gap-12">
-                  <div className="content max-w-[1300px] w-full flex items-center" ref={scrambleRef}>
-                     <h2 className='text-[40px] leading-[200%] font-normal text-black inline-block text-center items-start max-sm:text-[16px] max-md:text-[28px] max-md:leading-[180%]'>Our first tool is Sauna, an intelligent workspace that
-                        <div className="single-content__item inline-block px-4 py-2 rounded-[50px] bg-[#F5F4F1] backdrop-blur-[20px] mx-3 h-[64px] translate-y-[8px] max-sm:p-1 max-md:p-2 max-sm:h-[32px] max-md:h-[40px] max-md:translate-y-[2px]">
-                           <div className="layer flex items-center gap-4 h-full max-md:gap-[6px]">
-                              <div className="image min-w-[40px] w-[40px] h-[40px] rounded-full relative overflow-hidden max-md:min-w-[20px] max-md:w-[20px] max-md:h-[20px]">
-                                 <Image className='absolute bottom-0 right-0' src={'/tools-1.png'} width={78} height={73} alt='Wordware' draggable={false} quality={100} loading='lazy' />
+                  <div className="content max-w-[900px] w-full flex items-center" ref={scrambleRef}>
+                     <h2 className='leading-[220%] md:leading-[200%] font-normal text-black inline-block text-center items-start text-[16px] md:text-[28px]'>Our first tool is Sauna, an intelligent workspace that
+                        <div className="single-content__item inline-block px-4 py-2 max-sm:p-1 max-md:p-2 rounded-[50px] bg-[#F5F4F1] backdrop-blur-[20px] mx-2 md:mx-3 translate-y-[8px] h-[32px] md:h-[64px] max-md:translate-y-[2px]">
+                           <div className="layer flex items-center h-full gap-[4px] md:gap-[12px]">
+                              <div className="image w-[16px] md:w-[40px] min-w-[16px] md:min-w-[40px] h-[16px] md:h-[40px] rounded-full relative overflow-hidden">
+                                 <Image className='absolute bottom-0 right-0 blur-[3px]' src={'/gif-1.gif'} width={64} height={64} alt='Wordware' draggable={false} quality={100} loading='lazy' />
                               </div>
-                              <h5 className='font-[DepartureMono] text-[34px] leading-[140%] max-md:text-[20px] max-sm:leading-4 max-md:leading-[24px]'><TextScramble className='!p-0 !bg-[transparent] !font-[DepartureMono] !leading-[100%] !md:leading-[24px] !min-md:text-[34px] text-[14px] !tracking-normal !m-0' as="div" trigger={scrambleTrigger1} duration={1.2} speed={0.05} onScrambleComplete={() => setScrambleTrigger2(true)}>collaborates</TextScramble></h5>
+                              <h5 className='font-[DepartureMono] text-[34px] leading-[140%] max-md:text-[20px] max-sm:leading-4 max-md:leading-[24px]'><TextScramble className='font-[DepartureMono] leading-[100%] md:leading-[24px] text-[14px] md:text-[26px]' as="div" trigger={scrambleTrigger1} duration={1.2} speed={0.05} onScrambleComplete={() => setScrambleTrigger2(true)}>collaborates</TextScramble></h5>
                            </div>
                         </div>
                         with you,
-                        <div className="single-content__item inline-block px-4 py-2 rounded-[50px] bg-[#F5F4F1] backdrop-blur-[20px] mx-3 h-[64px] translate-y-[8px] max-sm:p-1 max-md:p-2 max-sm:h-[32px] max-md:h-[40px] max-md:translate-y-[2px]">
-                           <div className="layer flex items-center gap-4 h-full max-md:gap-[6px]">
-                              <div className="image min-w-[40px] w-[40px] h-[40px] rounded-full relative overflow-hidden max-md:min-w-[20px] max-md:w-[20px] max-md:h-[20px]">
-                                 <Image className='absolute bottom-0 right-0' src={'/tools-2.png'} width={78} height={73} alt='Wordware' draggable={false} quality={100} loading='lazy' />
+                        <div className="single-content__item inline-block px-4 py-2 max-sm:p-1 max-md:p-2 rounded-[50px] bg-[#F5F4F1] backdrop-blur-[20px] mx-2 md:mx-3 translate-y-[8px] h-[32px] md:h-[64px] max-md:translate-y-[2px]">
+                           <div className="layer flex items-center h-full gap-[4px] md:gap-[12px]">
+                              <div className="image w-[16px] md:w-[40px] min-w-[16px] md:min-w-[40px] h-[16px] md:h-[40px] rounded-full relative overflow-hidden">
+                                 <Image className='absolute bottom-0 right-0 blur-[3px]' src={'/gif-2.gif'} width={64} height={64} alt='Wordware' draggable={false} quality={100} loading='lazy' />
                               </div>
-                              <h5 className='font-[DepartureMono] text-[34px] leading-[140%] max-md:text-[20px] max-sm:leading-4 max-md:leading-[24px]'><TextScramble className='!p-0 !bg-[transparent] !font-[DepartureMono] !leading-[100%] !md:leading-[24px] !min-md:text-[34px] text-[14px] !tracking-normal !m-0' as="div" trigger={scrambleTrigger2} duration={1.5} speed={0.05} onScrambleComplete={() => setScrambleTrigger3(true)}>eliminates</TextScramble></h5>
+                              <h5 className='font-[DepartureMono] text-[34px] leading-[140%] max-md:text-[20px] max-sm:leading-4 max-md:leading-[24px]'><TextScramble className='font-[DepartureMono] leading-[100%] md:leading-[24px] text-[14px] md:text-[26px]' as="div" trigger={scrambleTrigger1} duration={1.2} speed={0.05} onScrambleComplete={() => setScrambleTrigger2(true)}>eliminates</TextScramble></h5>
                            </div>
                         </div>
                         the busywork, and
-                        <div className="single-content__item inline-block px-4 py-2 rounded-[50px] bg-[#F5F4F1] backdrop-blur-[20px] mx-3 h-[64px] translate-y-[8px] max-sm:p-1 max-md:p-2 max-sm:h-[32px] max-md:h-[40px] max-md:translate-y-[2px]">
-                           <div className="layer flex items-center gap-4 h-full max-md:gap-[6px]">
-                              <div className="image min-w-[40px] w-[40px] h-[40px] rounded-full relative overflow-hidden max-md:min-w-[20px] max-md:w-[20px] max-md:h-[20px]">
-                                 <Image className='absolute bottom-0 right-0' src={'/tools-3.png'} width={112} height={73} alt='Wordware' draggable={false} quality={100} loading='lazy' />
+                        <div className="single-content__item inline-block px-4 py-2 max-sm:p-1 max-md:p-2 rounded-[50px] bg-[#F5F4F1] backdrop-blur-[20px] mx-2 md:mx-3 translate-y-[8px] h-[32px] md:h-[64px] max-md:translate-y-[2px]">
+                           <div className="layer flex items-center h-full gap-[4px] md:gap-[12px]">
+                              <div className="image w-[16px] md:w-[40px] min-w-[16px] md:min-w-[40px] h-[16px] md:h-[40px] rounded-full relative overflow-hidden">
+                                 <Image className='absolute bottom-0 right-0 blur-[3px]' src={'/gif-3.gif'} width={64} height={64} alt='Wordware' draggable={false} quality={100} loading='lazy' />
                               </div>
-                              <h5 className='font-[DepartureMono] text-[34px] leading-[140%] max-md:text-[20px] max-sm:leading-4 max-md:leading-[24px]'><TextScramble className='!p-0 !bg-[transparent] !font-[DepartureMono] !leading-[100%] !md:leading-[24px] !min-md:text-[34px] text-[14px] !tracking-normal !m-0' as="div" trigger={scrambleTrigger3} duration={1.8} speed={0.05}>anticipates</TextScramble></h5>
+                              <h5 className='font-[DepartureMono] text-[34px] leading-[140%] max-md:text-[20px] max-sm:leading-4 max-md:leading-[24px]'><TextScramble className='font-[DepartureMono] leading-[100%] md:leading-[24px] text-[14px] md:text-[26px]' as="div" trigger={scrambleTrigger1} duration={1.2} speed={0.05} onScrambleComplete={() => setScrambleTrigger2(true)}>anticipates</TextScramble></h5>
                            </div>
                         </div>
                         what’s next, turning to-do into done.

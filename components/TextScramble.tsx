@@ -102,18 +102,18 @@ export function TextScramble({
     <MotionComponent 
       style={{ 
         display: 'inline',
-        fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
-        fontSize: '0.8em',
-        fontWeight: '300',
-        letterSpacing: '0.02em',
-        backgroundColor: '#EDE5D8',
-        padding: '0.05em 0.5em',
-        margin: '0 -0.05em',
-        borderRadius: '0.35em',
-        lineHeight: 'inherit',
-        verticalAlign: 'baseline',
-        boxDecorationBreak: 'clone',
-        WebkitBoxDecorationBreak: 'clone',
+        // fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+        // fontSize: '0.8em',
+        // fontWeight: '300',
+        // letterSpacing: '0.02em',
+        // backgroundColor: '#EDE5D8',
+        // padding: '0.05em 0.5em',
+        // margin: '0 -0.05em',
+        // borderRadius: '0.35em',
+        // lineHeight: 'inherit',
+        // verticalAlign: 'baseline',
+        // boxDecorationBreak: 'clone',
+        // WebkitBoxDecorationBreak: 'clone',
         ...(props.style || {})
       }}
       className={className}

@@ -41,38 +41,38 @@ export default function Footer() {
                <div className="links-left links-block flex flex-col pr-[72px] pb-[50px] pl-0 pt-0 max-lg:pr-[50px] max-md:p-0">
                   <Link href={'/story'}>
                      <div className="single-link">
-                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Story</span>
+                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Story</span>
                      </div>
                   </Link>
                   <div className="single-link">
-                     <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Careers</span>
+                     <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Careers</span>
                   </div>
                   <div className="single-link">
-                     <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Wordware V1</span>
+                     <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Wordware V1</span>
                   </div>
                   <Link href={'https://sauna.ai/'} target='_blank'>
                      <div className="single-link">
-                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Sauna OS</span>
+                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] whitespace-nowrap not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Sauna OS</span>
                      </div>
                   </Link>
                </div>
                <div className="links-right links-block flex flex-col pr-[72px] pb-[50px] pl-0 pt-0 max-lg:pr-[50px] max-md:p-0">
                   <Link href={'https://www.linkedin.com/company/wordware/'} target='_blank'>
                      <div className="single-link">
-                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>LinkedIn</span>
+                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>LinkedIn</span>
                      </div>
                   </Link>
                   <Link href={'https://www.instagram.com/wordware.ai'} target='_blank'>
                      <div className="single-link">
-                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>instagram</span>
+                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>instagram</span>
                      </div>
                   </Link>
                   <div className="single-link">
-                     <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Youtube</span>
+                     <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>Youtube</span>
                   </div>
                   <Link href={'https://x.com/wordware'} target='_blank'>
                      <div className="single-link">
-                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[18px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>X</span>
+                        <span className='text-[#BBBBB0] hover:text-[#fff] text-[14px] md:text-[16px] not-italic font-normal leading-[300%] tracking-[0.54px] uppercase'>X</span>
                      </div>
                   </Link>
                </div>

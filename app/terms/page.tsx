@@ -75,13 +75,13 @@ export default function Terms() {
 
         <div className="px-[16px] md:px-[40px] lg:px-[96px] xl:px-[172px] 2xl:px-[258px] pt-[172px] md:pt-[252px] pb-[96px] md:pb-32">
           {/* Two Column Layout */}
-          <div className="flex flex-col md:flex-row gap-12 md:gap-24">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-24">
             {/* Left Column - Title */}
             <div className="md:w-[35%] md:sticky md:top-32 md:self-start">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal leading-tight text-black font-suisse mb-6 cascade-in" style={{ animationDelay: '0.4s' }}>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal leading-tight text-black font-suisse mb-8 md:mb-6 cascade-in" style={{ animationDelay: '0.4s' }}>
                 Terms + Conditions
               </h1>
-              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-black/60 font-normal cascade-in" style={{ animationDelay: '0.5s' }}>
+              <p className="text-lg lg:text-xl leading-relaxed text-black/60 font-normal cascade-in" style={{ animationDelay: '0.5s' }}>
                 Wordware is committed to clear, transparent terms.
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function Terms() {
 
               {/* Section 1 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '0.7s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">1. Acceptance of Terms</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">1. Acceptance of Terms</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   By accessing and using Wordware's services at <a href="http://app.wordware.ai" className="underline" target="_blank" rel="noopener noreferrer">app.wordware.ai</a> ("the Service"), provided by Wordware ("Wordware", "we", "us"), you agree to comply with and be bound by these terms and conditions. If you do not agree to these terms, please do not use the Service.
                 </p>
@@ -102,7 +102,7 @@ export default function Terms() {
 
               {/* Section 2 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '0.8s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">2. Changes to Terms</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">2. Changes to Terms</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   Wordware reserves the right to change, modify, or revise these terms and conditions at any time. The continued use of the Service following the posting of any changes to the terms constitutes acceptance of those changes.
                 </p>
@@ -110,7 +110,7 @@ export default function Terms() {
 
               {/* Section 3 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '0.9s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">3. Registration and Account Security</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">3. Registration and Account Security</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   To use the Service, User must register for an account. User agrees to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.
                 </p>
@@ -118,7 +118,7 @@ export default function Terms() {
 
               {/* Section 4 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.0s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">4. User Conduct</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">4. User Conduct</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   Users agree not to use the Service to:
                 </p>
@@ -127,18 +127,18 @@ export default function Terms() {
                   <li>Infringe upon the rights of any third party, including copyright, trademark, privacy, or other personal or proprietary rights.</li>
                 </ul>
 
-                <h3 className="text-lg md:text-xl font-semibold text-black mt-6">Acceptable Use Policy (AUP)</h3>
+                <h3 className="text-lg lg:text-xl font-semibold text-black mt-6">Acceptable Use Policy (AUP)</h3>
 
                 <div className="space-y-4">
                   <div>
-                    <p className="text-base md:text-lg font-semibold text-black mb-2">1. Ethical and Responsible Use</p>
+                    <p className="text-lg lg:text-xl font-semibold text-black mb-2">1. Ethical and Responsible Use</p>
                     <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                       Ensuring the ethical and responsible use of WordWare is paramount. All users of WordWare must adhere to our Acceptable Use Policy (AUP). It is important to clarify that WordWare does not permit users to create chatbots. The platform solely leverages the reasoning abilities of Claude for its functionalities.
                     </p>
                   </div>
 
                   <div>
-                    <p className="text-base md:text-lg font-semibold text-black mb-2">2. API Providers and Foundational LLM Models</p>
+                    <p className="text-lg lg:text-xl font-semibold text-black mb-2">2. API Providers and Foundational LLM Models</p>
                     <p className="text-base md:text-lg leading-relaxed text-black font-normal mb-2">
                       Our services are underpinned by foundational Large Language Models (LLMs), primarily provided by partners such as OpenAI, Claude and Google (PaLM). Users must:
                     </p>
@@ -151,7 +151,7 @@ export default function Terms() {
                   </div>
 
                   <div>
-                    <p className="text-base md:text-lg font-semibold text-black mb-2">3. Violations and Mitigations</p>
+                    <p className="text-lg lg:text-xl font-semibold text-black mb-2">3. Violations and Mitigations</p>
                     <p className="text-base md:text-lg leading-relaxed text-black font-normal mb-2">
                       <strong>User Notifications:</strong> If users are determined to be in violation of the AUP, they will receive notifications. They will have an opportunity to address and rectify the issue or file an appeal if they believe there has been an oversight.
                     </p>
@@ -173,10 +173,10 @@ export default function Terms() {
 
               {/* Data Protection Section */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.1s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">Data Protection and Privacy</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">Data Protection and Privacy</h2>
 
                 <div>
-                  <h3 className="text-lg md:text-xl font-semibold text-black mb-2">1. GDPR (General Data Protection Regulation) Compliance</h3>
+                  <h3 className="text-lg lg:text-xl font-semibold text-black mb-2">1. GDPR (General Data Protection Regulation) Compliance</h3>
                   <p className="text-base md:text-lg leading-relaxed text-black font-normal mb-2">
                     For users residing in the European Union (EU) and European Economic Area (EEA):
                   </p>
@@ -189,7 +189,7 @@ export default function Terms() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg md:text-xl font-semibold text-black mb-2">2. CCPA (California Consumer Privacy Act) Compliance</h3>
+                  <h3 className="text-lg lg:text-xl font-semibold text-black mb-2">2. CCPA (California Consumer Privacy Act) Compliance</h3>
                   <p className="text-base md:text-lg leading-relaxed text-black font-normal mb-2">
                     For residents of California, USA:
                   </p>
@@ -211,7 +211,7 @@ export default function Terms() {
 
               {/* Section 5 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.2s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">5. Data Storage and Analysis</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">5. Data Storage and Analysis</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   Wordware will store and analyze data related to the applications created through the Service. The analysis of data is for the purpose of improving the Service and will not be used for our independent purposes.
                 </p>
@@ -219,7 +219,7 @@ export default function Terms() {
 
               {/* Section 6 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.3s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">6. Intellectual Property</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">6. Intellectual Property</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   Users retain ownership of the intellectual content they create using Wordware. However, by using the Service, users grant Wordware a non-exclusive, transferable, sub-licensable, royalty-free, and global license to use, store, display, reproduce, modify, create derivative works, and distribute user content solely for the purpose of operating and improving the Service.
                 </p>
@@ -227,7 +227,7 @@ export default function Terms() {
 
               {/* Section 7 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.4s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">7. Privacy</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">7. Privacy</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   Your use of Wordware is also governed by our Privacy Policy, which can be found <a href="https://www.notion.so/Privacy-Policy-5b6b683a316a45d7b6c6a0684010b758?pvs=21" className="underline" target="_blank" rel="noopener noreferrer">here</a>.
                 </p>
@@ -235,7 +235,7 @@ export default function Terms() {
 
               {/* Section 8 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.5s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">8. Limitation of Liability</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">8. Limitation of Liability</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   To the maximum extent permitted by applicable law, Wordware shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the services; (b) any unauthorized access, use, or alteration of your transmissions or content; (c) any other matter relating to the Service.
                 </p>
@@ -243,7 +243,7 @@ export default function Terms() {
 
               {/* Section 9 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.6s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">9. Termination</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">9. Termination</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   Wordware reserves the right to terminate or suspend your account and access to the Service at our sole discretion, without notice, for conduct that we believe violates these terms or is harmful to other users of the Service, us, third parties, or for other conduct that we believe to be harmful to our business or reputation.
                 </p>
@@ -251,7 +251,7 @@ export default function Terms() {
 
               {/* Section 10 */}
               <div className="space-y-4 cascade-in" style={{ animationDelay: '1.7s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold text-black">10. Governing Law</h2>
+                <h2 className="text-lg lg:text-xl font-semibold text-black">10. Governing Law</h2>
                 <p className="text-base md:text-lg leading-relaxed text-black font-normal">
                   These terms and conditions and any dispute or claim arising out of or in connection with them or their subject matter or formation shall be governed by and construed in accordance with the law of the State of California.
                 </p>
