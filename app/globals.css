@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/suisse-intl-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exposure';
+  src: url('/ExposureTrial[-20].otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Serrif';
+  src: url('/Serrif-TRIAL-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HedvigSerif';
+  src: url('/HedvigLettersSerif_14pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DepartureMono';
+  src: url('/DepartureMono-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCSocialMono';
+  src: url('/ABCSocialMonoVariable-Trial.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .font-suisse {
+    font-family: 'Suisse Intl', sans-serif;
+  }
+
+  .font-exposure {
+    font-family: 'Exposure', sans-serif;
+  }
+
+  .font-serrif {
+    font-family: 'Serrif', serif;
+  }
+}
+
+@keyframes expandOut {
+  from {
+    max-width: 48rem;
+    /* 768px - max-w-3xl */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  to {
+    max-width: 100%;
+    padding-left: 3rem;
+    /* px-12 */
+    padding-right: 3rem;
+    /* px-12 */
+  }
+}
+
+@keyframes cascadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cascade-in {
+  opacity: 0;
+  animation: cascadeIn 0.6s ease-out forwards;
+}
+
+@keyframes pinkPulse {
+  0% {
+    background: radial-gradient(circle at 30% 50%, #2a1f24, #0f0d0d);
+  }
+
+  25% {
+    background: radial-gradient(circle at 60% 40%, #9d5f72, #3d2c32);
+  }
+
+  50% {
+    background: radial-gradient(circle at 40% 60%, #b87286, #4a3238);
+  }
+
+  75% {
+    background: radial-gradient(circle at 70% 50%, #9d5f72, #3d2c32);
+  }
+
+  100% {
+    background: radial-gradient(circle at 30% 50%, #2a1f24, #0f0d0d);
+  }
+}
+
+.sauna-button {
+  animation: cascadeIn 0.6s ease-out forwards, pinkPulse 4s ease-in-out infinite 0.6s;
+  opacity: 0;
+}
+
+/* Custom Diamond Cursor */
+html {
+  overscroll-behavior: none;
+  background-color: #FCFAF6;
+}
+
+body {
+  cursor: none;
+  overscroll-behavior: none;
+  background-color: #FCFAF6;
+  /* Performance optimizations */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body * {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: #292828;
+  transform: translate(-50%, -50%);
+  border-radius: 1px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+}
+
+
+.custom-cursor.cursor-text {
+  width: 1px;
+  height: 20px;
+  border-radius: 0.5px;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.split-char {
+  /* display: inline; */
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Video performance optimizations */
+video {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+/* Optimize sticky positioning */
+.sticky {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* .split-line {
+  display: inline-flex;
+} */
+
+@media screen and (max-width: 1023px) {
+  .custom-cursor {
+    display: none;
+  }
+}
