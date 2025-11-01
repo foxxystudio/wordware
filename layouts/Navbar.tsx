@@ -24,7 +24,7 @@ export default function Navbar() {
             </Link>
          </div>
 
-         <div className="navs__wrapper flex items-center p-1 bg-[rgba(231,231,231,0.3)] backdrop-blur-[10px] gap-1 md:gap-2 rounded-[10px]">
+         <div className="navs__wrapper cursor-trigger flex items-center p-1 bg-[rgba(231,231,231,0.3)] backdrop-blur-[10px] gap-1 md:gap-2 rounded-[10px]">
             <Link href={'/story'}>
                <MagneticButton>
                   <div className="cursor-trigger single-nav__item flex items-center group transition-colors duration-300 ease-in-out hover:bg-[rgb(221,221,221)] rounded-[10px]">
@@ -44,7 +44,7 @@ export default function Navbar() {
             </MagneticButton>
             <Link href={'/https://sauna.ai'} target='_blank'>
                <MagneticButton>
-                  <div className="cursor-trigger single-nav__item flex items-center rounded-[10px] bg-[#FEF56E] last:bg-[#FEF56E] transition-colors duration-300 ease-in-out hover:bg-[#D8CF4E]">
+                  <div className="cursor-trigger single-nav__item flex items-center rounded-[10px] bg-[#FEF56E] last:bg-[#FEF56E] transition-colors duration-300 ease-in-out hover:bg-[#FFFAAF]">
                      <span className='font-[ABCSocialMono] p-2 md:px-3 md:py-2 text-[14px] leading-[100%] font-medium tracking-[-0.0px] md:tracking-[0.84px] uppercase text-[#103A1D]'>Sauna OS</span>
                   </div>
                </MagneticButton>

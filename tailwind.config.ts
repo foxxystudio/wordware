@@ -18,10 +18,12 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        monoSocial: ['ABCSocialMono', 'sans-serif']
+        monoSocial: ['ABCSocialMono', 'sans-serif'],
+        robotoMono: ['RobotoMono', 'sans-serif']
       },
     },
   },
   plugins: [],
 }
 export default config
+
