@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import Image from 'next/image';
 import { TextScramble } from '@/components/TextScramble';
 import Link from 'next/link';
@@ -83,53 +83,57 @@ export default function LandingPage4() {
    }, []);
 
    ///Sauna Logo Hover Animation
-   useEffect(() => {
-      const logo = logoRef.current;
-      if (!logo) return;
+   useLayoutEffect(() => {
+      const timeout = setTimeout(() => {
+         const logo = logoRef.current;
+         if (!logo) return;
 
-      const bars = gsap.utils.toArray<SVGPathElement>(logo.querySelectorAll('#saunaSVG path'));
-      const range = 80;
+         const bars = gsap.utils.toArray<SVGPathElement>(logo.querySelectorAll('#saunaSVG path'));
+         const range = 80;
 
-      // Her path için GSAP tween verisi oluştur
-      const data = bars.map((el) => ({
-         el,
-         progress: 0,
-         tween: gsap.to(el, { y: -10, ease: 'none', paused: true }),
-         x: 0,
-      }));
+         // Her path için GSAP tween verisi oluştur
+         const data = bars.map((el) => ({
+            el,
+            progress: 0,
+            tween: gsap.to(el, { y: -10, ease: 'none', paused: true }),
+            x: 0,
+         }));
 
-      const onResize = () => {
-         bars.forEach((bar, i) => {
-            const bounds = bar.getBoundingClientRect();
-            data[i].x = bounds.left + bounds.width / 2;
-         });
-      };
+         const onResize = () => {
+            bars.forEach((bar, i) => {
+               const bounds = bar.getBoundingClientRect();
+               data[i].x = bounds.left + bounds.width / 2;
+            });
+         };
 
-      const update = (e: MouseEvent) => {
-         const { clientX } = e;
-         for (let i = 0; i < bars.length; i++) {
-            const d = data[i];
-            const distance = Math.abs(clientX - d.x);
-            if (distance < range) {
-               d.progress = 1 - distance / range;
-               d.tween.progress(d.progress);
-            } else if (d.progress !== 0) {
-               d.progress = 0;
-               d.tween.progress(0);
+         const update = (e: MouseEvent) => {
+            const { clientX } = e;
+            for (let i = 0; i < bars.length; i++) {
+               const d = data[i];
+               const distance = Math.abs(clientX - d.x);
+               if (distance < range) {
+                  d.progress = 1 - distance / range;
+                  d.tween.progress(d.progress);
+               } else if (d.progress !== 0) {
+                  d.progress = 0;
+                  d.tween.progress(0);
+               }
             }
-         }
-      };
+         };
 
-      // Başlangıç setup
-      onResize();
-      window.addEventListener('resize', onResize);
-      logo.addEventListener('mousemove', update);
+         // Başlangıç setup
+         onResize();
+         window.addEventListener('resize', onResize);
+         logo.addEventListener('mousemove', update);
 
-      // Cleanup
-      return () => {
-         window.removeEventListener('resize', onResize);
-         logo.removeEventListener('mousemove', update);
-      };
+         // Cleanup
+         return () => {
+            window.removeEventListener('resize', onResize);
+            logo.removeEventListener('mousemove', update);
+         };
+      }, 100); // 100ms yeterli olur
+
+      return () => clearTimeout(timeout);
    }, []);
 
    return (
@@ -229,6 +233,8 @@ export default function LandingPage4() {
                                        style={{
                                           WebkitClipPath: "url(#textClip)",
                                           clipPath: "url(#textClip)",
+                                          width: '196px',
+                                          height: '55px'
                                        }}
                                     />
 
